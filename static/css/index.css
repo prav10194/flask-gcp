@@ -1,0 +1,9 @@
+.productInputClass {
+    border: 2px solid red;
+}
+
+.errorContainerClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

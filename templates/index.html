@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+      "
+    >
+      <input
+        class="productInputClass"
+        id="productInputId"
+        type="text"
+        placeholder="Enter language (Python or JavaScript)"
+        style="width: 20rem;"
+      />
+      <div class="infoButtonClass" id="infoButtonId">
+        <br />
+        <button onclick="getDescription()">Get Details</button>
+      </div>
+      <br />
+      <pre class="descriptionClass" id="descriptionId"></pre>
+    </div>
+  </body>
+</html>

@@ -3,6 +3,7 @@ Create a simple flask app and host it on Google Cloud Platform. The app also int
 
 ### Commands to create docker container and run locally (Need to install docker)
 docker build --tag gcp_flask_boilerplate .
+<br/>
 docker run -p 5000:5000 gcp_flask_boilerplate
 
 ### Initialize gcloud
